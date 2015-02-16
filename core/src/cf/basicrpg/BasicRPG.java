@@ -7,14 +7,16 @@ import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 
 public class BasicRPG extends Game {
-
+	
+	public InputManager im;
 	private GameScreen gameScreen;
 	
 	@Override
 	public void create() {
-		gameScreen = new GameScreen(this);
+		im = new InputManager();
+		Gdx.input.setInputProcessor(im);
 		
-		Gdx.input.setInputProcessor(new InputManager());
+		gameScreen = new GameScreen(this);
 		setScreen(gameScreen);
 	}
 }

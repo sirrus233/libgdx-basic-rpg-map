@@ -16,7 +16,7 @@ public class GameScreen extends AbstractScreen {
 
 	@Override
 	public void update(float delta) {
-		if (InputManager.keysTyped[InputManager.ESC]) Gdx.app.exit();
+		if (game.im.keysTyped[InputManager.ESC]) Gdx.app.exit();
 	}
 
 	@Override

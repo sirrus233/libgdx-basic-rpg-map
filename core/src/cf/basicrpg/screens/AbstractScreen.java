@@ -1,6 +1,5 @@
 package cf.basicrpg.screens;
 
-import cf.basicrpg.InputManager;
 import cf.basicrpg.BasicRPG;
 
 import com.badlogic.gdx.ScreenAdapter;
@@ -13,7 +12,7 @@ public abstract class AbstractScreen extends ScreenAdapter {
 	public void render(float delta) {
 		update(delta);
 		draw(renderer);
-		InputManager.clear();
+		game.im.clear();
 	}
 	
 	public abstract void update(float delta);
