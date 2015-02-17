@@ -8,7 +8,7 @@ public class City {
 	private final int SCALE = 1;
 	private final int CITY_WIDTH = 500;
 	private final int CITY_HEIGHT = 500;
-	private final int NUM_BUILDINGS = 60;
+	private final int NUM_BUILDINGS = 70;
 	
 	private Building[][] cityGrid; 
 

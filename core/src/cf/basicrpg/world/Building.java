@@ -17,7 +17,8 @@ public class Building {
 	public Building(Random rng) {
 		height = MIN_HEIGHT + rng.nextInt(MAX_HEIGHT-MIN_HEIGHT);
 		width = MIN_WIDTH + rng.nextInt(MAX_WIDTH-MIN_WIDTH);
-		color = new Color(rng.nextFloat(), rng.nextFloat(), rng.nextFloat(), 1f);
+		//color = new Color(rng.nextFloat(), rng.nextFloat(), rng.nextFloat(), 1f);
+		color = Color.MAROON;
 	}
 	
 	public int getHeight() {
