@@ -18,7 +18,8 @@ public class BasicRPG extends Game {
 	
 	@Override
 	public void create() {
-		rng = new Random(RANDOM_SEED);
+		//rng = new Random(RANDOM_SEED);
+		rng = new Random();
 		
 		im = new InputManager();
 		Gdx.input.setInputProcessor(im);
